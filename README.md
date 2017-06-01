@@ -28,10 +28,10 @@ Implement the following routes but have them utilize a database to achieve data 
 Each `user` in the database should have the properties: `email`, `password`, `firstName`, and `blogPosts`.  
 `email` should be unique, required, and have a validation function.  
 `password` should be required.
-`blogPosts` should be an array of blogPosts.
+`favoriteFoods` should be an array of Food objects.
 
-Implement a second model called `BlogPosts`.  Implement the following routes:
-* [POST] `/posts/:userId` This route should save a new blog post to the corresponding user document.
-* [GET] `/user/posts/:userId` This route will return an array of all blog posts associated with the specified user.
-* [GET] `/posts/:id` This route will return the blog post with the matching `id` property.
-* [DELETE] `/posts/:id` This route should delete the specified blog post.
+Implement a second model called `Food`.  Implement the following routes:
+* [POST] `/food/:userId` This route should save a new food to the corresponding user document.
+* [GET] `/user/foods/:userId` This route will return an array of all foods associated with the specified user.
+* [GET] `/foods/:id` This route will return the food with the matching `_id` property.
+* [DELETE] `/foods/:id` This route should delete the specified food.
