@@ -2,16 +2,16 @@
 
 ## Topics
 
-*	File structure 
-* Controllers 
-* Models 
-* mongoose.model 
-* Schema.methods 
-* Schema.statics 
-* Schema.pre('save', cb); 
+*	File structure
+* Controllers
+* Models
+* mongoose.model
+* Schema.methods
+* Schema.statics
+* Schema.pre('save', cb);
 * required: true
 * validate: {}
-* Nested Schema 
+* Nested Schema
 * module.exports
 
 ## Assignment
@@ -25,7 +25,7 @@ Implement the following routes but have them utilize a database to achieve data 
 * [GET] `/users/:id` This route will return the user with the matching `id` (`_id` on the db document) property.
 * [DELETE] `/users/:id` This route should delete the specified user.
 
-Each `user` in the database should have the properties: `email`, `password`, `firstName`, and `blogPosts`.  
+Each `user` in the database should have the properties: `email`, `password`, `firstName`, and `favoriteFoods`.  
 `email` should be unique, required, and have a validation function.  
 `password` should be required.
 `favoriteFoods` should be an array of Food objects.
